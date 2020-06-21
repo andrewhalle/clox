@@ -1,0 +1,9 @@
+var last = 0;
+var next = 1;
+for (var i = 0; i < 100; i = i + 1) {
+  print last;
+  var tmp = last;
+  last = next;
+  next = next + tmp;
+}
+print next;
