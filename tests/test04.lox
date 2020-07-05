@@ -1,0 +1,6 @@
+fun a(x, y) {
+  print x + y;
+}
+
+var x = a(1, 2);
+print x;
