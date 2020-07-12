@@ -4,4 +4,7 @@ build debug=debug_default:
   clang -g {{debug}} -o main *.c
 
 clean:
-  rm main
+  rm -f main tags
+
+tags:
+  ctags -R .
