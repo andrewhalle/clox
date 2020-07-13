@@ -1,0 +1,16 @@
+fun outer() {
+  var x = "outside";
+  fun inner() {
+    print x;
+  }
+
+  return inner;
+}
+
+fun messWithStack() {
+  var x1 = "hello world";
+}
+
+var closure = outer();
+messWithStack();
+closure();
