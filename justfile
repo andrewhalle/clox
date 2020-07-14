@@ -1,4 +1,4 @@
-debug_default := '-D DEBUG_TRACE_EXECUTION -D DEBUG_PRINT_CODE'
+debug_default := '-D DEBUG_TRACE_EXECUTION -D DEBUG_PRINT_CODE -D DEBUG_STRESS_GC -D DEBUG_LOG_GC'
 
 build debug=debug_default:
   clang -g {{debug}} -o main *.c
