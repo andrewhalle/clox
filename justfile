@@ -4,7 +4,7 @@ build debug=debug_default:
   clang -g {{debug}} -o main *.c
 
 clean:
-  rm -f main
+  rm -f main gprof.stats gmon.out
 
 tags:
   ctags -R .
